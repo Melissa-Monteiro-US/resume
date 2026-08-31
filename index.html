@@ -56,14 +56,14 @@
             border: 1px solid var(--border-color);
         }
 
-        header {
+        .resume-intro {
             text-align: center;
-            border-bottom: none;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 1.75rem;
             margin-bottom: 2rem;
         }
 
-        header h1 {
+        .resume-intro h1 {
             font-size: 2.25rem;
             color: var(--primary-color);
             letter-spacing: -0.025em;
@@ -129,10 +129,6 @@
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 0.35rem;
             margin-bottom: 1rem;
-        }
-
-        .summary h2 {
-            border-bottom: none;
         }
 
         .summary p {
@@ -220,7 +216,7 @@
                 border-radius: 8px;
             }
 
-            header h1 {
+            .resume-intro h1 {
                 font-size: 1.85rem;
             }
 
@@ -329,7 +325,7 @@
 
     <main class="container">
 
-        <header>
+        <div class="resume-intro">
             <h1>Melissa Monteiro</h1>
 
             <div class="contact-info">
@@ -351,13 +347,19 @@
                     </a>
                 </span>
             </div>
-        </header>
+
+            <div>
+                <div class="status-badge">
+                    Open to legal, administrative, operations, government, research &amp; program support opportunities
+                </div>
+            </div>
+        </div>
 
         <section class="summary">
             <h2>Professional Summary</h2>
 
             <p>
-                Recent M.A. graduate with first-year experience supporting attorneys, clients, and administrative operations in fast-paced, deadline-driven environments. Developed transferable skills in research and writing, records and information management, organization, coordination, scheduling, deadline tracking, client and stakeholder communication, and administrative support. Quick to learn new procedures, systems, and technology, with an interest in applying these skills to opportunities in legal support, administrative, operations, government, research, and program support roles.
+                Recent M.A. graduate with first-year professional experience supporting attorneys, clients, and administrative operations in fast-paced, deadline-driven environments. Developed transferable skills in research and writing, records and information management, organization, coordination, scheduling, deadline tracking, client and stakeholder communication, and administrative support. Quick to learn new procedures, systems, and technology, with an interest in applying these skills to opportunities in legal support, administrative, operations, government, research, and program support roles.
             </p>
         </section>
 
@@ -365,7 +367,6 @@
             <h2>Core Skills</h2>
 
             <div class="skills-list">
-                <span class="skill-tag">Legal Support</span>
                 <span class="skill-tag">Program Support</span>
                 <span class="skill-tag">Administrative Support</span>
                 <span class="skill-tag">Operations Support</span>
