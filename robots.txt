@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://melissa-monteiro-us.github.io/resume/sitemap.xml
+Sitemap: https://melissa-monteiro-us.github.io/sitemap.xml
