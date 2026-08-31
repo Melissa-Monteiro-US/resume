@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <title>Melissa Monteiro - Professional Resume</title>
+    <title>Melissa Monteiro | Professional Resume</title>
 
     <meta name="author" content="Melissa Monteiro, Dallas TX US">
-    <meta name="description" content="Resume of Melissa Monteiro - M.A. graduate with professional experience in legal support, administration, operations, research, records management, and program support in Dallas, TX.">
-    <meta name="keywords" content="Melissa Monteiro, Paralegal, Legal Support, Administrative Support, Operations Support, Program Support, Research, Records Management, Case Management, Litigation Support, Scheduling, Calendar Management, Deadline Tracking, CRM, Document Management, Dallas TX">
+    <meta name="description" content="Professional resume of Melissa Monteiro, M.A. graduate with first-year experience in legal support, administration, operations, research, records management, case management, and program support in Dallas, Texas.">
+    <meta name="keywords" content="Melissa Monteiro, M.A., Political Science, Paralegal, Legal Support, Legal Operations, Administrative Support, Operations Support, Program Support, Research, Records Management, Case Management, Litigation Support, Scheduling, Calendar Management, Deadline Tracking, CRM, Document Management, Dallas TX">
     <meta name="theme-color" content="#1e293b">
+    <meta name="color-scheme" content="light">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Melissa Monteiro | Professional Resume">
+    <meta property="og:description" content="M.A. graduate with first-year experience in legal support, administration, operations, research, records management, case management, and program support.">
+    <meta property="og:url" content="https://melissa-monteiro-us.github.io/resume/">
 
     <style>
         :root {
             --primary-color: #1e293b;
             --secondary-color: #334155;
+            --muted-color: #64748b;
             --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
             --text-color: #1f2937;
             --light-bg: #f8fafc;
             --card-bg: #ffffff;
             --border-color: #e2e8f0;
             --tag-bg: #f1f5f9;
             --tag-text: #334155;
+            --success-bg: #eff6ff;
+            --max-width: 920px;
         }
 
-        * {
+        /* -------------------------------------------------------------
+           RESET / BASE
+        ------------------------------------------------------------- */
+
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         html {
@@ -37,6 +52,8 @@
         }
 
         body {
+            margin: 0;
+            min-width: 320px;
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -47,42 +64,80 @@
                 sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--light-bg);
-            padding:
-                max(1.5rem, env(safe-area-inset-top))
-                max(1rem, env(safe-area-inset-right))
-                max(1.5rem, env(safe-area-inset-bottom))
-                max(1rem, env(safe-area-inset-left));
+            background: var(--light-bg);
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             overflow-wrap: break-word;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 3px solid rgba(37, 99, 235, 0.35);
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
+        /* -------------------------------------------------------------
+           PAGE
+        ------------------------------------------------------------- */
+
+        .page-shell {
+            width: 100%;
+            padding:
+                max(2rem, env(safe-area-inset-top))
+                max(1.5rem, env(safe-area-inset-right))
+                max(2rem, env(safe-area-inset-bottom))
+                max(1.5rem, env(safe-area-inset-left));
         }
 
         .container {
             width: 100%;
-            max-width: 850px;
+            max-width: var(--max-width);
             margin: 0 auto;
-            background-color: var(--card-bg);
-            padding: 3rem;
+            padding: 3.25rem;
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 14px;
             box-shadow:
-                0 4px 6px -1px rgba(0, 0, 0, 0.05),
-                0 2px 4px -2px rgba(0, 0, 0, 0.05);
+                0 10px 25px -5px rgba(15, 23, 42, 0.06),
+                0 8px 10px -6px rgba(15, 23, 42, 0.05);
         }
+
+        /* -------------------------------------------------------------
+           HEADER
+        ------------------------------------------------------------- */
 
         .resume-intro {
             text-align: center;
-            padding-bottom: 1.75rem;
-            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            margin-bottom: 2.25rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .resume-intro h1 {
+            margin: 0 0 0.65rem;
             color: var(--primary-color);
-            font-size: 2.25rem;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-            line-height: 1.2;
-            margin-bottom: 0.75rem;
+            font-size: clamp(2rem, 4vw, 2.65rem);
+            font-weight: 750;
+            letter-spacing: -0.035em;
+            line-height: 1.15;
+        }
+
+        .resume-subtitle {
+            margin: 0 0 1rem;
+            color: var(--secondary-color);
+            font-size: 1rem;
+            font-weight: 600;
         }
 
         .contact-info {
@@ -90,15 +145,15 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 0.5rem 0.75rem;
+            gap: 0.35rem 0.75rem;
             color: var(--secondary-color);
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
+            font-size: 0.94rem;
         }
 
         .contact-item {
             display: inline-flex;
             align-items: center;
+            min-width: 0;
         }
 
         .contact-item:not(:last-child)::after {
@@ -107,26 +162,12 @@
             color: #94a3b8;
         }
 
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            transition: color 0.15s ease-in-out;
-            overflow-wrap: anywhere;
-        }
-
-        a:hover,
-        a:focus {
-            text-decoration: underline;
-        }
-
-        a:focus-visible {
-            outline: 2px solid var(--accent-color);
-            outline-offset: 2px;
-            border-radius: 2px;
-        }
+        /* -------------------------------------------------------------
+           SECTIONS
+        ------------------------------------------------------------- */
 
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 2.25rem;
         }
 
         section:last-child {
@@ -134,54 +175,60 @@
         }
 
         h2 {
+            margin: 0 0 1rem;
+            padding-bottom: 0.4rem;
             color: var(--primary-color);
-            font-size: 1.15rem;
-            font-weight: 700;
+            font-size: 1.08rem;
+            font-weight: 750;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.065em;
+            line-height: 1.35;
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.35rem;
-            margin-bottom: 1rem;
-        }
-
-        .summary {
-            border-top: none;
         }
 
         .summary h2 {
-            border-top: none;
-            border-bottom: none;
-            padding-top: 0;
-            margin-bottom: 0.75rem;
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0.65rem;
         }
 
         .summary p {
+            margin: 0;
             color: var(--secondary-color);
             font-size: 0.98rem;
-            text-align: left;
+            line-height: 1.72;
         }
+
+        /* -------------------------------------------------------------
+           SKILLS
+        ------------------------------------------------------------- */
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.45rem;
         }
 
         .skill-tag {
             display: inline-block;
-            background-color: var(--tag-bg);
+            max-width: 100%;
+            padding: 0.34rem 0.65rem;
             color: var(--tag-text);
+            background: var(--tag-bg);
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            padding: 0.35rem 0.7rem;
-            font-size: 0.85rem;
+            font-size: 0.84rem;
             font-weight: 500;
             line-height: 1.4;
         }
 
+        /* -------------------------------------------------------------
+           EXPERIENCE
+        ------------------------------------------------------------- */
+
         .job,
         .edu-item {
-            margin-bottom: 1.75rem;
+            margin-bottom: 1.85rem;
         }
 
         .job:last-child,
@@ -191,19 +238,23 @@
 
         .job-header,
         .edu-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 0.25rem;
-            margin-bottom: 0.35rem;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: start;
+            gap: 0.5rem 1rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .job-heading,
+        .edu-heading {
+            min-width: 0;
         }
 
         .job-title,
         .degree {
             color: var(--primary-color);
             font-size: 1rem;
-            font-weight: 700;
+            font-weight: 750;
         }
 
         .company-meta,
@@ -215,180 +266,261 @@
 
         .job-date,
         .edu-date {
-            color: #64748b;
-            font-size: 0.88rem;
-            font-weight: 500;
+            color: var(--muted-color);
+            font-size: 0.86rem;
+            font-weight: 650;
+            line-height: 1.4;
             white-space: nowrap;
+            text-align: right;
         }
 
-        ul {
-            list-style-type: disc;
+        .job ul,
+        .honors-list {
+            margin: 0;
             padding-left: 1.25rem;
         }
 
-        li {
+        .job li,
+        .honors-list li {
+            margin-bottom: 0.48rem;
             color: var(--secondary-color);
-            font-size: 0.95rem;
-            margin-bottom: 0.4rem;
+            font-size: 0.94rem;
+            line-height: 1.58;
         }
 
-        li:last-child {
+        .job li:last-child,
+        .honors-list li:last-child {
             margin-bottom: 0;
         }
 
         .honors-list {
             list-style-type: square;
-            padding-left: 1.25rem;
         }
 
-        /* Smartphone Optimization - Android and iOS */
+        /* -------------------------------------------------------------
+           EDUCATION
+        ------------------------------------------------------------- */
+
+        .edu-item {
+            padding-bottom: 0.15rem;
+        }
+
+        /* -------------------------------------------------------------
+           TABLET
+        ------------------------------------------------------------- */
+
+        @media (max-width: 900px) {
+            .page-shell {
+                padding:
+                    max(1.5rem, env(safe-area-inset-top))
+                    max(1.25rem, env(safe-area-inset-right))
+                    max(1.5rem, env(safe-area-inset-bottom))
+                    max(1.25rem, env(safe-area-inset-left));
+            }
+
+            .container {
+                padding: 2.5rem;
+            }
+        }
+
+        /* -------------------------------------------------------------
+           SMARTPHONES - ANDROID / iOS
+        ------------------------------------------------------------- */
+
         @media (max-width: 640px) {
-            body {
+            .page-shell {
                 padding:
                     max(0.75rem, env(safe-area-inset-top))
-                    max(0.75rem, env(safe-area-inset-right))
+                    max(0.65rem, env(safe-area-inset-right))
                     max(0.75rem, env(safe-area-inset-bottom))
-                    max(0.75rem, env(safe-area-inset-left));
+                    max(0.65rem, env(safe-area-inset-left));
             }
 
             .container {
                 width: 100%;
-                padding: 1.5rem 1.15rem;
-                border-radius: 8px;
+                padding: 1.4rem 1.05rem;
+                border-radius: 9px;
+                box-shadow:
+                    0 4px 12px rgba(15, 23, 42, 0.05);
             }
 
             .resume-intro {
-                padding-bottom: 1.25rem;
+                padding-bottom: 1.4rem;
                 margin-bottom: 1.5rem;
             }
 
             .resume-intro h1 {
                 font-size: 1.85rem;
+                letter-spacing: -0.025em;
+            }
+
+            .resume-subtitle {
+                font-size: 0.9rem;
             }
 
             .contact-info {
                 flex-direction: column;
-                gap: 0.5rem;
-                margin-top: 0.75rem;
+                width: 100%;
+                gap: 0.45rem;
+                font-size: 0.88rem;
             }
 
             .contact-item {
                 width: 100%;
                 justify-content: center;
+                text-align: center;
             }
 
             .contact-item:not(:last-child)::after {
-                content: "";
-                margin: 0;
+                display: none;
             }
 
             .contact-info a {
-                display: flex;
+                display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
                 min-height: 44px;
-                padding: 0.4rem 0.8rem;
-                background-color: var(--light-bg);
+                padding: 0.45rem 0.65rem;
+                background: var(--light-bg);
                 border: 1px solid var(--border-color);
                 border-radius: 6px;
-                font-size: 0.9rem;
                 text-align: center;
             }
 
-            .contact-info a:active {
-                background-color: #e2e8f0;
-            }
-
             section {
-                margin-bottom: 1.5rem;
+                margin-bottom: 1.65rem;
             }
 
             h2 {
-                font-size: 1.05rem;
+                font-size: 1rem;
                 margin-bottom: 0.85rem;
             }
 
             .summary p {
-                font-size: 0.94rem;
+                font-size: 0.92rem;
+                line-height: 1.65;
+            }
+
+            .skills-list {
+                gap: 0.4rem;
+            }
+
+            .skill-tag {
+                padding: 0.3rem 0.52rem;
+                font-size: 0.78rem;
             }
 
             .job,
             .edu-item {
-                margin-bottom: 1.5rem;
+                margin-bottom: 1.55rem;
             }
 
             .job-header,
             .edu-header {
+                display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 0.15rem;
-                margin-bottom: 0.5rem;
+                gap: 0.2rem;
+                margin-bottom: 0.55rem;
             }
 
             .job-title,
             .degree {
-                font-size: 0.98rem;
+                font-size: 0.96rem;
             }
 
             .company-meta,
             .edu-meta {
-                font-size: 0.9rem;
+                font-size: 0.88rem;
             }
 
             .job-date,
             .edu-date {
+                font-size: 0.81rem;
+                text-align: left;
+                white-space: normal;
                 color: #475569;
-                font-size: 0.82rem;
-                font-weight: 600;
             }
 
-            ul {
+            .job ul,
+            .honors-list {
                 padding-left: 1.1rem;
             }
 
-            li {
-                font-size: 0.92rem;
-                margin-bottom: 0.5rem;
-            }
-
-            .skill-tag {
-                padding: 0.3rem 0.55rem;
-                font-size: 0.8rem;
+            .job li,
+            .honors-list li {
+                font-size: 0.9rem;
+                line-height: 1.55;
+                margin-bottom: 0.55rem;
             }
         }
 
-        /* Extra-small smartphone optimization */
+        /* -------------------------------------------------------------
+           EXTRA SMALL DEVICES
+        ------------------------------------------------------------- */
+
         @media (max-width: 380px) {
-            body {
+            .page-shell {
                 padding:
                     max(0.5rem, env(safe-area-inset-top))
-                    max(0.5rem, env(safe-area-inset-right))
+                    max(0.45rem, env(safe-area-inset-right))
                     max(0.5rem, env(safe-area-inset-bottom))
-                    max(0.5rem, env(safe-area-inset-left));
+                    max(0.45rem, env(safe-area-inset-left));
             }
 
             .container {
-                padding: 1.25rem 1rem;
+                padding: 1.15rem 0.9rem;
             }
 
             .resume-intro h1 {
                 font-size: 1.65rem;
             }
 
-            .contact-info a {
-                font-size: 0.85rem;
+            .summary p {
+                font-size: 0.9rem;
             }
 
-            li {
-                font-size: 0.9rem;
+            .skill-tag {
+                font-size: 0.75rem;
+            }
+
+            .job li,
+            .honors-list li {
+                font-size: 0.87rem;
             }
         }
 
-        /* Print Optimization */
+        /* -------------------------------------------------------------
+           LANDSCAPE SMARTPHONE
+        ------------------------------------------------------------- */
+
+        @media (max-width: 900px) and (orientation: landscape) {
+            .container {
+                max-width: 900px;
+            }
+
+            .contact-info {
+                flex-direction: row;
+            }
+
+            .contact-item {
+                width: auto;
+            }
+
+            .contact-item:not(:last-child)::after {
+                display: inline;
+            }
+        }
+
+        /* -------------------------------------------------------------
+           PRINT
+        ------------------------------------------------------------- */
+
         @media print {
             @page {
-                margin: 0.5in;
+                size: Letter;
+                margin: 0.45in;
             }
 
             html {
@@ -396,7 +528,11 @@
             }
 
             body {
-                background-color: #ffffff;
+                background: #ffffff;
+                color: #000000;
+            }
+
+            .page-shell {
                 padding: 0;
             }
 
@@ -410,12 +546,38 @@
             }
 
             a {
-                color: var(--text-color);
+                color: inherit;
                 text-decoration: none;
+            }
+
+            .resume-intro {
+                border-bottom: 1px solid #cbd5e1;
             }
 
             .skill-tag {
                 border: 1px solid #cbd5e1;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+
+            .job {
+                break-inside: avoid;
+            }
+
+            .edu-item {
+                break-inside: avoid;
+            }
+        }
+
+        /* -------------------------------------------------------------
+           ACCESSIBILITY / REDUCED MOTION
+        ------------------------------------------------------------- */
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
             }
         }
     </style>
@@ -423,342 +585,535 @@
 
 <body>
 
-    <main class="container">
+    <div class="page-shell">
 
-        <div class="resume-intro">
-            <h1>Melissa Monteiro</h1>
+        <main class="container" id="resume">
 
-            <div class="contact-info">
-                <span class="contact-item">Dallas, TX</span>
+            <!-- =========================================================
+                 HEADER
+            ========================================================== -->
 
-                <span class="contact-item">
-                    <a href="tel:2145584969">214-558-4969</a>
-                </span>
+            <header class="resume-intro">
 
-                <span class="contact-item">
-                    <a href="mailto:melissanm.1998@gmail.com">
-                        melissanm.1998@gmail.com
-                    </a>
-                </span>
+                <h1>Melissa Monteiro</h1>
 
-                <span class="contact-item">
-                    <a
-                        href="https://www.linkedin.com/in/melissa-monteiro-texas/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        linkedin.com/in/melissa-monteiro-texas/
-                    </a>
-                </span>
-            </div>
-        </div>
+                <p class="resume-subtitle">
+                    Dallas, Texas
+                </p>
 
-        <section class="summary">
-            <h2>Professional Summary</h2>
+                <div class="contact-info">
 
-            <p>
-                Recent M.A. graduate with first-year professional experience
-                supporting attorneys, clients, and administrative operations
-                in fast-paced, deadline-driven environments. Developed
-                transferable skills in research and writing, records and
-                information management, organization, coordination, scheduling,
-                deadline tracking, client and stakeholder communication, and
-                administrative support. Quick to learn new procedures, systems,
-                and technology, with an interest in applying these skills to
-                opportunities in legal support, administrative, operations,
-                government, research, and program support roles.
-            </p>
-        </section>
+                    <span class="contact-item">
+                        Dallas, TX
+                    </span>
 
-        <section class="skills">
-            <h2>Core Skills</h2>
+                    <span class="contact-item">
+                        <a href="tel:+12145584969">
+                            214-558-4969
+                        </a>
+                    </span>
 
-            <div class="skills-list">
-                <span class="skill-tag">Program Support</span>
-                <span class="skill-tag">Administrative Support</span>
-                <span class="skill-tag">Operations Support</span>
-                <span class="skill-tag">Task Coordination</span>
-                <span class="skill-tag">Scheduling</span>
-                <span class="skill-tag">Calendar Management</span>
-                <span class="skill-tag">Deadline Tracking</span>
-                <span class="skill-tag">Workflow Support</span>
-                <span class="skill-tag">Process Coordination</span>
+                    <span class="contact-item">
+                        <a href="mailto:melissanm.1998@gmail.com">
+                            melissanm.1998@gmail.com
+                        </a>
+                    </span>
 
-                <span class="skill-tag">Research</span>
-                <span class="skill-tag">Information Gathering</span>
-                <span class="skill-tag">Research Writing</span>
-                <span class="skill-tag">Critical Analysis</span>
-                <span class="skill-tag">Written Communication</span>
-                <span class="skill-tag">Report Preparation</span>
+                    <span class="contact-item">
+                        <a
+                            href="https://www.linkedin.com/in/melissa-monteiro-texas/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Melissa Monteiro LinkedIn profile"
+                        >
+                            linkedin.com/in/melissa-monteiro-texas/
+                        </a>
+                    </span>
 
-                <span class="skill-tag">Client Communication</span>
-                <span class="skill-tag">Stakeholder Communication</span>
-                <span class="skill-tag">Customer Service</span>
-                <span class="skill-tag">Professional Correspondence</span>
-                <span class="skill-tag">Phone &amp; Email Communication</span>
-
-                <span class="skill-tag">CRM and Records Management</span>
-                <span class="skill-tag">Document Management</span>
-                <span class="skill-tag">Electronic File Management</span>
-                <span class="skill-tag">Document Organization</span>
-                <span class="skill-tag">Information Management</span>
-
-                <span class="skill-tag">Litigation Support</span>
-                <span class="skill-tag">Case Management</span>
-                <span class="skill-tag">Legal Document Preparation</span>
-                <span class="skill-tag">Discovery Support</span>
-                <span class="skill-tag">Court Filings</span>
-                <span class="skill-tag">Medical &amp; Billing Records Retrieval</span>
-                <span class="skill-tag">Insurance Claims Support</span>
-
-                <span class="skill-tag">
-                    Microsoft Office (Word, Excel, Outlook, Teams)
-                </span>
-                <span class="skill-tag">CRM Systems</span>
-                <span class="skill-tag">
-                    Electronic Case Management Systems
-                </span>
-                <span class="skill-tag">
-                    AI-Assisted Productivity &amp; Document Tools
-                </span>
-            </div>
-        </section>
-
-        <section class="experience">
-            <h2>Work Experience</h2>
-
-            <article class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Paralegal</span> |
-                        <span class="company-meta">
-                            Daspit Law Firm — Dallas, TX
-                        </span>
-                    </div>
-
-                    <span class="job-date">Jun 2026 – Jul 2026</span>
                 </div>
 
-                <ul>
+            </header>
+
+            <!-- =========================================================
+                 PROFESSIONAL SUMMARY
+            ========================================================== -->
+
+            <section class="summary" aria-labelledby="summary-heading">
+
+                <h2 id="summary-heading">
+                    Professional Summary
+                </h2>
+
+                <p>
+                    Recent M.A. graduate with first-year experience supporting
+                    attorneys, clients, and administrative operations in
+                    fast-paced, deadline-driven environments. Developed
+                    transferable skills in research and writing, records and
+                    information management, organization, coordination,
+                    scheduling, deadline tracking, client and stakeholder
+                    communication, and administrative support. Quick to learn
+                    new procedures, systems, and technology, with an interest
+                    in applying these skills to opportunities in legal support,
+                    administrative, operations, government, research, and
+                    program support roles.
+                </p>
+
+            </section>
+
+            <!-- =========================================================
+                 CORE SKILLS
+            ========================================================== -->
+
+            <section class="skills" aria-labelledby="skills-heading">
+
+                <h2 id="skills-heading">
+                    Core Skills
+                </h2>
+
+                <div class="skills-list">
+
+                    <!-- Administrative & Operations -->
+                    <span class="skill-tag">Legal Support</span>
+                    <span class="skill-tag">Program Support</span>
+                    <span class="skill-tag">Administrative Support</span>
+                    <span class="skill-tag">Operations Support</span>
+                    <span class="skill-tag">Task Coordination</span>
+                    <span class="skill-tag">Scheduling</span>
+                    <span class="skill-tag">Calendar Management</span>
+                    <span class="skill-tag">Deadline Tracking</span>
+                    <span class="skill-tag">Workflow Support</span>
+                    <span class="skill-tag">Process Coordination</span>
+
+                    <!-- Research & Analysis -->
+                    <span class="skill-tag">Research</span>
+                    <span class="skill-tag">Information Gathering</span>
+                    <span class="skill-tag">Research Writing</span>
+                    <span class="skill-tag">Critical Analysis</span>
+                    <span class="skill-tag">Written Communication</span>
+                    <span class="skill-tag">Report Preparation</span>
+
+                    <!-- Communication & Service -->
+                    <span class="skill-tag">Client Communication</span>
+                    <span class="skill-tag">Stakeholder Communication</span>
+                    <span class="skill-tag">Customer Service</span>
+                    <span class="skill-tag">Professional Correspondence</span>
+                    <span class="skill-tag">Phone &amp; Email Communication</span>
+
+                    <!-- Information & Documentation -->
+                    <span class="skill-tag">CRM and Records Management</span>
+                    <span class="skill-tag">Document Management</span>
+                    <span class="skill-tag">Electronic File Management</span>
+                    <span class="skill-tag">Document Organization</span>
+                    <span class="skill-tag">Information Management</span>
+
+                    <!-- Legal & Claims -->
+                    <span class="skill-tag">Litigation Support</span>
+                    <span class="skill-tag">Case Management</span>
+                    <span class="skill-tag">Legal Document Preparation</span>
+                    <span class="skill-tag">Discovery Support</span>
+                    <span class="skill-tag">Court Filings</span>
+                    <span class="skill-tag">Medical &amp; Billing Records Retrieval</span>
+                    <span class="skill-tag">Insurance Claims Support</span>
+
+                    <!-- Technology -->
+                    <span class="skill-tag">
+                        Microsoft Office (Word, Excel, Outlook, Teams)
+                    </span>
+
+                    <span class="skill-tag">
+                        CRM Systems
+                    </span>
+
+                    <span class="skill-tag">
+                        Electronic Case Management Systems
+                    </span>
+
+                    <span class="skill-tag">
+                        AI-Assisted Productivity &amp; Document Tools
+                    </span>
+
+                </div>
+
+            </section>
+
+            <!-- =========================================================
+                 WORK EXPERIENCE
+            ========================================================== -->
+
+            <section class="experience" aria-labelledby="experience-heading">
+
+                <h2 id="experience-heading">
+                    Work Experience
+                </h2>
+
+                <!-- DASpit LAW FIRM -->
+
+                <article class="job">
+
+                    <div class="job-header">
+
+                        <div class="job-heading">
+
+                            <div>
+                                <span class="job-title">
+                                    Paralegal
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="company-meta">
+                                    Daspit Law Firm — Dallas, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-date">
+                            Jun 2026 – Jul 2026
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Assisted attorneys with day-to-day litigation and
+                            case management activities across active personal
+                            injury files.
+                        </li>
+
+                        <li>
+                            Maintained organized electronic case files and
+                            records databases throughout the litigation
+                            lifecycle.
+                        </li>
+
+                        <li>
+                            Prepared, scanned, filed, and organized pleadings
+                            and legal documents in accordance with court rules
+                            and firm procedures.
+                        </li>
+
+                        <li>
+                            Requested, reviewed, and tracked medical, billing,
+                            employment, and other case-related records.
+                        </li>
+
+                        <li>
+                            Maintained attorney calendars and monitored
+                            deadlines to support timely case progression and
+                            compliance.
+                        </li>
+
+                        <li>
+                            Assisted with discovery, document organization,
+                            and trial preparation as needed.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <!-- KELLEY CLARKE PC -->
+
+                <article class="job">
+
+                    <div class="job-header">
+
+                        <div class="job-heading">
+
+                            <div>
+                                <span class="job-title">
+                                    Executive Assistant / Paralegal
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="company-meta">
+                                    Kelley Clarke PC — Prosper, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-date">
+                            Apr 2026 – May 2026
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Maintained attorney calendars and entered critical
+                            court deadlines from scheduling orders and notices.
+                        </li>
+
+                        <li>
+                            Monitored attorney email correspondence and
+                            prioritized incoming communications based on
+                            urgency and case needs.
+                        </li>
+
+                        <li>
+                            Routed time-sensitive legal correspondence,
+                            pleadings, and notices to attorneys for immediate
+                            review.
+                        </li>
+
+                        <li>
+                            Saved and organized court filings, discovery
+                            materials, and correspondence within electronic
+                            case files.
+                        </li>
+
+                        <li>
+                            Communicated with clients, court personnel, and
+                            opposing counsel staff regarding routine case
+                            matters.
+                        </li>
+
+                        <li>
+                            Scheduled client meetings, consultations,
+                            depositions, and attorney follow-up communications.
+                        </li>
+
+                        <li>
+                            Maintained organized physical and electronic case
+                            files to support efficient case management and
+                            retrieval.
+                        </li>
+
+                        <li>
+                            Leveraged foundational AI-assisted tools to
+                            streamline preliminary drafting of routine
+                            correspondence, verifying all generated content
+                            for factual accuracy and consistency.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <!-- THOMAS J. HENRY -->
+
+                <article class="job">
+
+                    <div class="job-header">
+
+                        <div class="job-heading">
+
+                            <div>
+                                <span class="job-title">
+                                    Paralegal
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="company-meta">
+                                    Thomas J. Henry Injury Attorneys — Irving, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-date">
+                            Dec 2025 – Apr 2026
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Requested and tracked medical, billing, radiology,
+                            and police records for personal injury cases.
+                        </li>
+
+                        <li>
+                            Opened and maintained insurance claims with
+                            carriers on behalf of clients.
+                        </li>
+
+                        <li>
+                            Organized case materials and assembled client files
+                            for attorney review.
+                        </li>
+
+                        <li>
+                            Prepared, scanned, faxed, and filed legal documents
+                            in accordance with firm procedures.
+                        </li>
+
+                        <li>
+                            Maintained accurate physical and electronic case
+                            files throughout the life of each case.
+                        </li>
+
+                        <li>
+                            Communicated with clients, medical providers, and
+                            insurance representatives to obtain information and
+                            provide updates.
+                        </li>
+
+                        <li>
+                            Assisted attorneys and case staff with day-to-day
+                            case management activities.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <!-- EAGLE GYMNASTICS ACADEMY -->
+
+                <article class="job">
+
+                    <div class="job-header">
+
+                        <div class="job-heading">
+
+                            <div>
+                                <span class="job-title">
+                                    Front Office Associate
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="company-meta">
+                                    EAGLE GYMNASTICS ACADEMY — Frisco, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="job-date">
+                            Jul 2022 – Nov 2025
+                        </div>
+
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Served as the first point of contact for parents,
+                            students, and visitors, providing in-person, phone,
+                            and email support for program registrations,
+                            contracts, and scheduling inquiries.
+                        </li>
+
+                        <li>
+                            Served as the primary administrator and staff
+                            resource for the CRM database, managing customer
+                            accounts, scheduling, payments, and record
+                            maintenance.
+                        </li>
+
+                        <li>
+                            Maintained confidential student, client, and
+                            administrative records with high accuracy and
+                            attention to detail.
+                        </li>
+
+                        <li>
+                            Managed daily front-office administrative
+                            operations and multi-line communications in a
+                            fast-paced environment.
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </section>
+
+            <!-- =========================================================
+                 EDUCATION
+            ========================================================== -->
+
+            <section class="education" aria-labelledby="education-heading">
+
+                <h2 id="education-heading">
+                    Education
+                </h2>
+
+                <div class="edu-item">
+
+                    <div class="edu-header">
+
+                        <div class="edu-heading">
+
+                            <div>
+                                <span class="degree">
+                                    Master of Arts in Political Science
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="edu-meta">
+                                    SAM HOUSTON STATE UNIVERSITY — Huntsville, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="edu-date">
+                            May 2026
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="edu-item">
+
+                    <div class="edu-header">
+
+                        <div class="edu-heading">
+
+                            <div>
+                                <span class="degree">
+                                    Bachelor of Arts in History
+                                </span>
+                                <span aria-hidden="true"> | </span>
+                                <span class="edu-meta">
+                                    THE UNIVERSITY OF TEXAS AT DALLAS — Richardson, TX
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="edu-date">
+                            May 2023
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- =========================================================
+                 HONORS AND AFFILIATIONS
+            ========================================================== -->
+
+            <section class="honors" aria-labelledby="honors-heading">
+
+                <h2 id="honors-heading">
+                    Honors and Affiliations
+                </h2>
+
+                <ul class="honors-list">
+
                     <li>
-                        Assisted attorneys with day-to-day litigation and case
-                        management activities across active personal injury
-                        files.
+                        National Society of Leadership and Success (NSLS)
                     </li>
+
                     <li>
-                        Maintained organized electronic case files and records
-                        databases throughout the litigation lifecycle.
+                        Golden Key International Honor Society
                     </li>
+
                     <li>
-                        Prepared, scanned, filed, and organized pleadings and
-                        legal documents in accordance with court rules and firm
-                        procedures.
+                        Honors Society Foundation
                     </li>
-                    <li>
-                        Requested, reviewed, and tracked medical, billing,
-                        employment, and other case-related records.
-                    </li>
-                    <li>
-                        Maintained attorney calendars and monitored deadlines
-                        to support timely case progression and compliance.
-                    </li>
-                    <li>
-                        Assisted with discovery, document organization, and
-                        trial preparation as needed.
-                    </li>
+
                 </ul>
-            </article>
 
-            <article class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">
-                            Executive Assistant / Paralegal
-                        </span> |
-                        <span class="company-meta">
-                            Kelley Clarke PC — Prosper, TX
-                        </span>
-                    </div>
+            </section>
 
-                    <span class="job-date">Apr 2026 – May 2026</span>
-                </div>
+        </main>
 
-                <ul>
-                    <li>
-                        Maintained attorney calendars and entered critical
-                        court deadlines from scheduling orders and notices.
-                    </li>
-                    <li>
-                        Monitored attorney email correspondence and prioritized
-                        incoming communications based on urgency and case
-                        needs.
-                    </li>
-                    <li>
-                        Routed time-sensitive legal correspondence, pleadings,
-                        and notices to attorneys for immediate review.
-                    </li>
-                    <li>
-                        Saved and organized court filings, discovery materials,
-                        and correspondence within electronic case files.
-                    </li>
-                    <li>
-                        Communicated with clients, court personnel, and
-                        opposing counsel staff regarding routine case matters.
-                    </li>
-                    <li>
-                        Scheduled client meetings, consultations, depositions,
-                        and attorney follow-up communications.
-                    </li>
-                    <li>
-                        Maintained organized physical and electronic case
-                        files to support efficient case management and
-                        retrieval.
-                    </li>
-                    <li>
-                        Leveraged foundational AI-assisted tools to streamline
-                        preliminary drafting of routine correspondence,
-                        verifying all generated content for factual accuracy
-                        and consistency.
-                    </li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Paralegal</span> |
-                        <span class="company-meta">
-                            Thomas J. Henry Injury Attorneys — Irving, TX
-                        </span>
-                    </div>
-
-                    <span class="job-date">Dec 2025 – Apr 2026</span>
-                </div>
-
-                <ul>
-                    <li>
-                        Requested, obtained, and tracked medical records,
-                        itemized billing statements, radiology reports, and
-                        police collision reports required for case valuation,
-                        damages calculation, and demand packages.
-                    </li>
-                    <li>
-                        Opened, monitored, and maintained bodily injury and
-                        property damage insurance claims with third-party
-                        carriers on behalf of personal injury clients.
-                    </li>
-                    <li>
-                        Communicated regularly with clients, treating medical
-                        providers, and insurance adjusters to gather case
-                        evidence, confirm treatment status, and provide claim
-                        updates.
-                    </li>
-                    <li>
-                        Organized case evidence, indexed discovery materials,
-                        and assembled comprehensive trial and demand files for
-                        attorney review.
-                    </li>
-                    <li>
-                        Prepared, scanned, indexed, and e-filed legal documents
-                        and pleadings in accordance with court rules and firm
-                        operating procedures.
-                    </li>
-                    <li>
-                        Maintained accurate physical and electronic case files
-                        throughout the litigation and settlement lifecycle to
-                        ensure data integrity and confidentiality.
-                    </li>
-                    <li>
-                        Assisted attorneys and senior case staff with daily case
-                        management, client intake support, and routine
-                        litigation tasks.
-                    </li>
-                </ul>
-            </article>
-
-            <article class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Front Office Associate</span> |
-                        <span class="company-meta">
-                            EAGLE GYMNASTICS ACADEMY — Frisco, TX
-                        </span>
-                    </div>
-
-                    <span class="job-date">Jul 2022 – Nov 2025</span>
-                </div>
-
-                <ul>
-                    <li>
-                        Served as the first point of contact for parents,
-                        students, and visitors, providing in-person, phone,
-                        and email support for program registrations, contracts,
-                        and scheduling inquiries.
-                    </li>
-                    <li>
-                        Served as the primary administrator and staff resource
-                        for the CRM database, managing customer accounts,
-                        scheduling, payments, and record maintenance.
-                    </li>
-                    <li>
-                        Maintained confidential student, client, and
-                        administrative records with high accuracy and
-                        attention to detail.
-                    </li>
-                    <li>
-                        Managed daily front-office administrative operations
-                        and multi-line communications in a fast-paced
-                        environment.
-                    </li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-
-            <div class="edu-item">
-                <div class="edu-header">
-                    <div>
-                        <span class="degree">
-                            Master of Arts in Political Science
-                        </span> |
-                        <span class="edu-meta">
-                            SAM HOUSTON STATE UNIVERSITY — Huntsville, TX
-                        </span>
-                    </div>
-
-                    <span class="edu-date">May 2026</span>
-                </div>
-            </div>
-
-            <div class="edu-item">
-                <div class="edu-header">
-                    <div>
-                        <span class="degree">
-                            Bachelor of Arts in History
-                        </span> |
-                        <span class="edu-meta">
-                            THE UNIVERSITY OF TEXAS AT DALLAS — Richardson, TX
-                        </span>
-                    </div>
-
-                    <span class="edu-date">May 2023</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="honors">
-            <h2>Honors and Affiliations</h2>
-
-            <ul class="honors-list">
-                <li>National Society of Leadership and Success (NSLS)</li>
-                <li>Golden Key International Honor Society</li>
-                <li>Honors Society Foundation</li>
-            </ul>
-        </section>
-
-    </main>
+    </div>
 
 </body>
 </html>
