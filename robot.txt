@@ -1,0 +1,7 @@
+# robots.txt for Melissa Monteiro Resume Site
+# Allow all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+
+Sitemap: https://melissa-monteiro-us.github.io/resume/sitemap.xml
