@@ -1,4 +1,4 @@
-# Melissa Monteiro — Paralegal Resume
+# Melissa Monteiro Paralegal Resume
 
 📍 **Dallas, TX** | 📞 **214-558-4969** | ✉️ [melissanm.1998@gmail.com](mailto:melissanm.1998@gmail.com) | 🔗 [LinkedIn Profile](https://www.linkedin.com/in/melissa-monteiro-texas/)
 
