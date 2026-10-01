@@ -1,1102 +1,349 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="-MTWNE5NNeK92v1eRhw1bc1Q8xC5TTlMKARBXMcTwmY" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-    <title>Melissa Monteiro | Professional Resume</title>
-
-    <meta name="author" content="Melissa Monteiro, Dallas TX Metroplex US">
-    <meta name="description" content="Professional resume of Melissa Monteiro, M.A. graduate with first-year experience in legal support, administration, operations, research, records management, case management, and program support in Dallas, Texas.">
-    <meta name="keywords" content="Melissa Monteiro, Dallas TX, Dallas Texas, Plano TX, Plano Texas, Frisco TX, Frisco Texas, Addison TX, Addison Texas, Richardson TX, Richardson Texas, Allen TX, Allen Texas, McKinney TX, McKinney Texas,Regulatory/Compliance, Government Program Analysis, Government/Regulatory Affairs, Legal Operations, Transferable Experience, Legal Support, Paralegal, Administrative Support, Operations Support, Program Support, Research, Records Management, Case Management, Litigation Support, Deadline Tracking, Legal CRM, Document Management, Project Coordinator, Change Management Coordinator, AI Adoption">
-    <meta name="theme-color" content="#1e293b">
-    <meta name="color-scheme" content="light">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="Melissa Monteiro | Professional Resume">
-    <meta property="og:description" content="M.A. graduate with first-year experience in legal support, administration, operations, research, records management, case management, and program support.">
-    <meta property="og:url" content="https://melissa-monteiro-us.github.io/resume/">
-    <meta property="og:url" content="https://melissa-monteiro-us.github.io/resume/sitemap.xml/">
-
-    <style>
-        :root {
-            --primary-color: #1e293b;
-            --secondary-color: #334155;
-            --muted-color: #64748b;
-            --accent-color: #2563eb;
-            --accent-hover: #1d4ed8;
-            --text-color: #1f2937;
-            --light-bg: #f8fafc;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
-            --tag-bg: #f1f5f9;
-            --tag-text: #334155;
-            --success-bg: #eff6ff;
-            --max-width: 920px;
-        }
-
-        /* -------------------------------------------------------------
-           RESET / BASE
-        ------------------------------------------------------------- */
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        html {
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            min-width: 320px;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background: var(--light-bg);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-wrap: break-word;
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            overflow-wrap: anywhere;
-        }
-
-        a:hover {
-            color: var(--accent-hover);
-            text-decoration: underline;
-        }
-
-        a:focus-visible {
-            outline: 3px solid rgba(37, 99, 235, 0.35);
-            outline-offset: 3px;
-            border-radius: 3px;
-        }
-
-        /* -------------------------------------------------------------
-           PAGE
-        ------------------------------------------------------------- */
-
-        .page-shell {
-            width: 100%;
-            padding:
-                max(2rem, env(safe-area-inset-top))
-                max(1.5rem, env(safe-area-inset-right))
-                max(2rem, env(safe-area-inset-bottom))
-                max(1.5rem, env(safe-area-inset-left));
-        }
-
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 3.25rem;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 14px;
-            box-shadow:
-                0 10px 25px -5px rgba(15, 23, 42, 0.06),
-                0 8px 10px -6px rgba(15, 23, 42, 0.05);
-        }
-
-        /* -------------------------------------------------------------
-           HEADER
-        ------------------------------------------------------------- */
-
-        .resume-intro {
-            text-align: center;
-            padding-bottom: 2rem;
-            margin-bottom: 2.25rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .resume-intro h1 {
-            margin: 0 0 0.65rem;
-            color: var(--primary-color);
-            font-size: clamp(2rem, 4vw, 2.65rem);
-            font-weight: 750;
-            letter-spacing: -0.035em;
-            line-height: 1.15;
-        }
-
-        .resume-subtitle {
-            margin: 0 0 1rem;
-            color: var(--secondary-color);
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 0.35rem 0.75rem;
-            color: var(--secondary-color);
-            font-size: 0.94rem;
-        }
-
-        .contact-item {
-            display: inline-flex;
-            align-items: center;
-            min-width: 0;
-        }
-
-        .contact-item:not(:last-child)::after {
-            content: "•";
-            margin-left: 0.75rem;
-            color: #94a3b8;
-        }
-
-        /* -------------------------------------------------------------
-           SECTIONS
-        ------------------------------------------------------------- */
-
-        section {
-            margin-bottom: 2.25rem;
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            margin: 0 0 1rem;
-            padding-bottom: 0.4rem;
-            color: var(--primary-color);
-            font-size: 1.08rem;
-            font-weight: 750;
-            text-transform: uppercase;
-            letter-spacing: 0.065em;
-            line-height: 1.35;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .summary h2 {
-            border-bottom: 0;
-            padding-bottom: 0;
-            margin-bottom: 0.65rem;
-        }
-
-        .summary p {
-            margin: 0;
-            color: var(--secondary-color);
-            font-size: 0.98rem;
-            line-height: 1.72;
-        }
-
-        /* -------------------------------------------------------------
-           SKILLS
-        ------------------------------------------------------------- */
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.45rem;
-        }
-
-        .skill-tag {
-            display: inline-block;
-            max-width: 100%;
-            padding: 0.34rem 0.65rem;
-            color: var(--tag-text);
-            background: var(--tag-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 0.84rem;
-            font-weight: 500;
-            line-height: 1.4;
-        }
-
-        /* -------------------------------------------------------------
-           EXPERIENCE
-        ------------------------------------------------------------- */
-
-        .job,
-        .edu-item {
-            margin-bottom: 1.85rem;
-        }
-
-        .job:last-child,
-        .edu-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .job-header,
-        .edu-header {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) auto;
-            align-items: start;
-            gap: 0.5rem 1rem;
-            margin-bottom: 0.6rem;
-        }
-
-        .job-heading,
-        .edu-heading {
-            min-width: 0;
-        }
-
-        .job-title,
-        .degree {
-            color: var(--primary-color);
-            font-size: 1rem;
-            font-weight: 750;
-        }
-
-        .company-meta,
-        .edu-meta {
-            color: var(--secondary-color);
-            font-size: 0.95rem;
-            font-style: italic;
-        }
-
-        .job-date,
-        .edu-date {
-            color: var(--muted-color);
-            font-size: 0.86rem;
-            font-weight: 650;
-            line-height: 1.4;
-            white-space: nowrap;
-            text-align: right;
-        }
-
-        .job ul,
-        .honors-list {
-            margin: 0;
-            padding-left: 1.25rem;
-        }
-
-        .job li,
-        .honors-list li {
-            margin-bottom: 0.48rem;
-            color: var(--secondary-color);
-            font-size: 0.94rem;
-            line-height: 1.58;
-        }
-
-        .job li:last-child,
-        .honors-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .honors-list {
-            list-style-type: square;
-        }
-
-        /* -------------------------------------------------------------
-           EDUCATION
-        ------------------------------------------------------------- */
-
-        .edu-item {
-            padding-bottom: 0.15rem;
-        }
-
-        /* -------------------------------------------------------------
-           TABLET
-        ------------------------------------------------------------- */
-
-        @media (max-width: 900px) {
-            .page-shell {
-                padding:
-                    max(1.5rem, env(safe-area-inset-top))
-                    max(1.25rem, env(safe-area-inset-right))
-                    max(1.5rem, env(safe-area-inset-bottom))
-                    max(1.25rem, env(safe-area-inset-left));
-            }
-
-            .container {
-                padding: 2.5rem;
-            }
-        }
-
-        /* -------------------------------------------------------------
-           SMARTPHONES - ANDROID / iOS
-        ------------------------------------------------------------- */
-
-        @media (max-width: 640px) {
-            .page-shell {
-                padding:
-                    max(0.75rem, env(safe-area-inset-top))
-                    max(0.65rem, env(safe-area-inset-right))
-                    max(0.75rem, env(safe-area-inset-bottom))
-                    max(0.65rem, env(safe-area-inset-left));
-            }
-
-            .container {
-                width: 100%;
-                padding: 1.4rem 1.05rem;
-                border-radius: 9px;
-                box-shadow:
-                    0 4px 12px rgba(15, 23, 42, 0.05);
-            }
-
-            .resume-intro {
-                padding-bottom: 1.4rem;
-                margin-bottom: 1.5rem;
-            }
-
-            .resume-intro h1 {
-                font-size: 1.85rem;
-                letter-spacing: -0.025em;
-            }
-
-            .resume-subtitle {
-                font-size: 0.9rem;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                width: 100%;
-                gap: 0.45rem;
-                font-size: 0.88rem;
-            }
-
-            .contact-item {
-                width: 100%;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .contact-item:not(:last-child)::after {
-                display: none;
-            }
-
-            .contact-info a {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                min-height: 44px;
-                padding: 0.45rem 0.65rem;
-                background: var(--light-bg);
-                border: 1px solid var(--border-color);
-                border-radius: 6px;
-                text-align: center;
-            }
-
-            section {
-                margin-bottom: 1.65rem;
-            }
-
-            h2 {
-                font-size: 1rem;
-                margin-bottom: 0.85rem;
-            }
-
-            .summary p {
-                font-size: 0.92rem;
-                line-height: 1.65;
-            }
-
-            .skills-list {
-                gap: 0.4rem;
-            }
-
-            .skill-tag {
-                padding: 0.3rem 0.52rem;
-                font-size: 0.78rem;
-            }
-
-            .job,
-            .edu-item {
-                margin-bottom: 1.55rem;
-            }
-
-            .job-header,
-            .edu-header {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.2rem;
-                margin-bottom: 0.55rem;
-            }
-
-            .job-title,
-            .degree {
-                font-size: 0.96rem;
-            }
-
-            .company-meta,
-            .edu-meta {
-                font-size: 0.88rem;
-            }
-
-            .job-date,
-            .edu-date {
-                font-size: 0.81rem;
-                text-align: left;
-                white-space: normal;
-                color: #475569;
-            }
-
-            .job ul,
-            .honors-list {
-                padding-left: 1.1rem;
-            }
-
-            .job li,
-            .honors-list li {
-                font-size: 0.9rem;
-                line-height: 1.55;
-                margin-bottom: 0.55rem;
-            }
-        }
-
-        /* -------------------------------------------------------------
-           EXTRA SMALL DEVICES
-        ------------------------------------------------------------- */
-
-        @media (max-width: 380px) {
-            .page-shell {
-                padding:
-                    max(0.5rem, env(safe-area-inset-top))
-                    max(0.45rem, env(safe-area-inset-right))
-                    max(0.5rem, env(safe-area-inset-bottom))
-                    max(0.45rem, env(safe-area-inset-left));
-            }
-
-            .container {
-                padding: 1.15rem 0.9rem;
-            }
-
-            .resume-intro h1 {
-                font-size: 1.65rem;
-            }
-
-            .summary p {
-                font-size: 0.9rem;
-            }
-
-            .skill-tag {
-                font-size: 0.75rem;
-            }
-
-            .job li,
-            .honors-list li {
-                font-size: 0.87rem;
-            }
-        }
-
-        /* -------------------------------------------------------------
-           LANDSCAPE SMARTPHONE
-        ------------------------------------------------------------- */
-
-        @media (max-width: 900px) and (orientation: landscape) {
-            .container {
-                max-width: 900px;
-            }
-
-            .contact-info {
-                flex-direction: row;
-            }
-
-            .contact-item {
-                width: auto;
-            }
-
-            .contact-item:not(:last-child)::after {
-                display: inline;
-            }
-        }
-
-        /* -------------------------------------------------------------
-           PRINT
-        ------------------------------------------------------------- */
-
-        @media print {
-            @page {
-                size: Letter;
-                margin: 0.45in;
-            }
-
-            html {
-                scroll-behavior: auto;
-            }
-
-            body {
-                background: #ffffff;
-                color: #000000;
-            }
-
-            .page-shell {
-                padding: 0;
-            }
-
-            .container {
-                width: 100%;
-                max-width: 100%;
-                padding: 0;
-                border: none;
-                border-radius: 0;
-                box-shadow: none;
-            }
-
-            a {
-                color: inherit;
-                text-decoration: none;
-            }
-
-            .resume-intro {
-                border-bottom: 1px solid #cbd5e1;
-            }
-
-            .skill-tag {
-                border: 1px solid #cbd5e1;
-            }
-
-            section {
-                break-inside: avoid;
-            }
-
-            .job {
-                break-inside: avoid;
-            }
-
-            .edu-item {
-                break-inside: avoid;
-            }
-        }
-
-        /* -------------------------------------------------------------
-           ACCESSIBILITY / REDUCED MOTION
-        ------------------------------------------------------------- */
-
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-        }
-    
-.hero-banner{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:#fff;
-padding:2rem;
-border-radius:12px;
-margin-bottom:2rem;
-text-align:center;
-}
-.hero-banner h1{color:#fff;margin:0;}
-.hero-banner .tagline{font-size:1.1rem;font-weight:600;margin:.5rem 0 1rem;}
-.hero-banner .cta a{
-display:inline-block;
-padding:.7rem 1rem;
-margin:.25rem;
-border-radius:8px;
-background:#2563eb;
-color:#fff;
-text-decoration:none;
-}
-.highlight-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:.75rem;
-margin:1rem 0 2rem;
-}
-.highlight-card{
-border:1px solid #e2e8f0;
-border-radius:8px;
-padding:1rem;
-background:#f8fafc;
-}
-
-</style>
-</head>
-
-<body>
-
-    <div class="page-shell">
-
-        <main class="container" id="resume">
-
-            <!-- =========================================================
-                 HEADER
-            ========================================================== -->
-
-            <header class="resume-intro">
-
-                <h1>Melissa Monteiro</h1>
-
-                <p class="resume-subtitle">
-                    Dallas, Texas, US Metroplex
-                </p>
-
-                <div class="contact-info">
-
-                    <span class="contact-item">
-                        Dallas, TX
-                    </span>
-
-                    <span class="contact-item">
-                        <a href="tel:+12145584969">
-                            214-558-4969
-                        </a>
-                    </span>
-
-                    <span class="contact-item">
-                        <a href="mailto:melissanm.1998@gmail.com">
-                            melissanm.1998@gmail.com
-                        </a>
-                    </span>
-
-                    <span class="contact-item">
-                        <a
-                            href="https://www.linkedin.com/in/melissa-monteiro-texas/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Melissa Monteiro LinkedIn profile"
-                        >
-                            linkedin.com/in/melissa-monteiro-texas/
-                        </a>
-                    </span>
-
-                </div>
-
-            </header>
-
-            <!-- =========================================================
-                 PROFESSIONAL SUMMARY
-            ========================================================== -->
-
-            
-<section class="hero-banner">
-<h1>Melissa Monteiro</h1>
-<p class="tagline">Legal Operations | Paralegal | Research & Program Support</p>
-<p>M.A. Political Science graduate with experience supporting legal operations, litigation workflows, records administration, stakeholder communications, and research-driven initiatives.</p>
-<div class="cta">
-<a href="mailto:melissanm.1998@gmail.com">Contact Me</a>
-<a href="https://www.linkedin.com/in/melissa-monteiro-texas/" target="_blank">LinkedIn Profile</a>
-</div>
-</section>
-
-<section>
-<h2>Core Competencies</h2>
-<div class="highlight-grid">
-<div class="highlight-card">Legal Operations</div>
-<div class="highlight-card">Case Management</div>
-<div class="highlight-card">Records Management</div>
-<div class="highlight-card">Research & Analysis</div>
-<div class="highlight-card">Stakeholder Communication</div>
-<div class="highlight-card">Administrative Support</div>
-</div>
-</section>
-
-<section class="summary" aria-labelledby="summary-heading">
-
-                <h2 id="summary-heading">
-                    Professional Summary
-                </h2>
-
-                <p>
-                    M.A. Political Science graduate with experience supporting
-                    legal operations, case management, records administration,
-                    research, scheduling, and stakeholder communication.
-                    
-                    Experienced in managing deadline-driven workflows, maintaining
-                    confidential information, coordinating documentation, and
-                    communicating across clients, professionals, and external
-                    stakeholders.
-                    
-                    Seeking early-career opportunities in program operations,
-                    government/public affairs, compliance, research, legal operations,
-                    or policy support.
-                </p>
-
-            </section>
-
-            <!-- =========================================================
-                 WORK EXPERIENCE
-            ========================================================== -->
-
-            <section class="experience" aria-labelledby="experience-heading">
-
-                <h2 id="experience-heading">
-                    Work Experience
-                </h2>
-
-                <!-- DASpit LAW FIRM -->
-
-                <article class="job">
-
-                    <div class="job-header">
-
-                        <div class="job-heading">
-
-                            <div>
-                                <span class="job-title">
-                                    Paralegal
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="company-meta">
-                                    Daspit Law Firm — Dallas, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="job-date">
-                            Jun 2026 – Jul 2026
-                        </div>
-
-                    </div>
-
-                    <ul>
-
-                        <li>
-                            Assisted attorneys with day-to-day litigation and
-                            case management activities across active personal
-                            injury files.
-                        </li>
-
-                        <li>
-                            Maintained organized electronic case files and
-                            records databases throughout the litigation
-                            lifecycle.
-                        </li>
-
-                        <li>
-                            Prepared, scanned, filed, and organized pleadings
-                            and legal documents in accordance with court rules
-                            and firm procedures.
-                        </li>
-
-                        <li>
-                            Requested, reviewed, and tracked medical, billing,
-                            employment, and other case-related records.
-                        </li>
-
-                        <li>
-                            Maintained attorney calendars and monitored
-                            deadlines to support timely case progression and
-                            compliance.
-                        </li>
-
-                        <li>
-                            Assisted with discovery, document organization,
-                            and trial preparation as needed.
-                        </li>
-
-                    </ul>
-
-                </article>
-
-                <!-- KELLEY CLARKE PC -->
-
-                <article class="job">
-
-                    <div class="job-header">
-
-                        <div class="job-heading">
-
-                            <div>
-                                <span class="job-title">
-                                    Executive Assistant / Paralegal
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="company-meta">
-                                    Kelley Clarke PC — Prosper, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="job-date">
-                            Apr 2026 – May 2026
-                        </div>
-
-                    </div>
-
-                    <ul>
-
-                        <li>
-                            Maintained attorney calendars and entered critical
-                            court deadlines from scheduling orders and notices.
-                        </li>
-
-                        <li>
-                            Monitored attorney email correspondence and
-                            prioritized incoming communications based on
-                            urgency and case needs.
-                        </li>
-
-                        <li>
-                            Routed time-sensitive legal correspondence,
-                            pleadings, and notices to attorneys for immediate
-                            review.
-                        </li>
-
-                        <li>
-                            Saved and organized court filings, discovery
-                            materials, and correspondence within electronic
-                            case files.
-                        </li>
-
-                        <li>
-                            Communicated with clients, court personnel, and
-                            opposing counsel staff regarding routine case
-                            matters.
-                        </li>
-
-                        <li>
-                            Scheduled client meetings, consultations,
-                            depositions, and attorney follow-up communications.
-                        </li>
-
-                        <li>
-                            Maintained organized physical and electronic case
-                            files to support efficient case management and
-                            retrieval.
-                        </li>
-
-                        <li>
-                            Leveraged foundational AI-assisted tools to
-                            streamline preliminary drafting of routine
-                            correspondence, verifying all generated content
-                            for factual accuracy and consistency.
-                        </li>
-
-                    </ul>
-
-                </article>
-
-                <!-- THOMAS J. HENRY -->
-
-                <article class="job">
-
-                    <div class="job-header">
-
-                        <div class="job-heading">
-
-                            <div>
-                                <span class="job-title">
-                                    Paralegal
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="company-meta">
-                                    Thomas J. Henry Injury Attorneys — Irving, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="job-date">
-                            Dec 2025 – Apr 2026
-                        </div>
-
-                    </div>
-
-                    <ul>
-
-                        <li>
-                            Requested and tracked medical, billing, radiology,
-                            and police records for personal injury cases.
-                        </li>
-
-                        <li>
-                            Opened and maintained insurance claims with
-                            carriers on behalf of clients.
-                        </li>
-
-                        <li>
-                            Organized case materials and assembled client files
-                            for attorney review.
-                        </li>
-
-                        <li>
-                            Prepared, scanned, faxed, and filed legal documents
-                            in accordance with firm procedures.
-                        </li>
-
-                        <li>
-                            Maintained accurate physical and electronic case
-                            files throughout the life of each case.
-                        </li>
-
-                        <li>
-                            Communicated with clients, medical providers, and
-                            insurance representatives to obtain information and
-                            provide updates.
-                        </li>
-
-                        <li>
-                            Assisted attorneys and case staff with day-to-day
-                            case management activities.
-                        </li>
-
-                    </ul>
-
-                </article>
-
-                <!-- EAGLE GYMNASTICS ACADEMY -->
-
-                <article class="job">
-
-                    <div class="job-header">
-
-                        <div class="job-heading">
-
-                            <div>
-                                <span class="job-title">
-                                    Front Office Associate
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="company-meta">
-                                    EAGLE GYMNASTICS ACADEMY — Frisco, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="job-date">
-                            Jul 2022 – Nov 2025
-                        </div>
-
-                    </div>
-
-                    <ul>
-
-                        <li>
-                            Served as the first point of contact for parents,
-                            students, and visitors, providing in-person, phone,
-                            and email support for program registrations,
-                            contracts, and scheduling inquiries.
-                        </li>
-
-                        <li>
-                            Served as the primary administrator and staff
-                            resource for the CRM database, managing customer
-                            accounts, scheduling, payments, and record
-                            maintenance.
-                        </li>
-
-                        <li>
-                            Maintained confidential student, client, and
-                            administrative records with high accuracy and
-                            attention to detail.
-                        </li>
-
-                        <li>
-                            Managed daily front-office administrative
-                            operations and multi-line communications in a
-                            fast-paced environment.
-                        </li>
-
-                    </ul>
-
-                </article>
-
-            </section>
-
-            <!-- =========================================================
-                 EDUCATION
-            ========================================================== -->
-
-            <section class="education" aria-labelledby="education-heading">
-
-                <h2 id="education-heading">
-                    Education
-                </h2>
-
-                <div class="edu-item">
-
-                    <div class="edu-header">
-
-                        <div class="edu-heading">
-
-                            <div>
-                                <span class="degree">
-                                    Master of Arts in Political Science
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="edu-meta">
-                                    SAM HOUSTON STATE UNIVERSITY — Huntsville, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="edu-date">
-                            May 2026
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="edu-item">
-
-                    <div class="edu-header">
-
-                        <div class="edu-heading">
-
-                            <div>
-                                <span class="degree">
-                                    Bachelor of Arts in History
-                                </span>
-                                <span aria-hidden="true"> | </span>
-                                <span class="edu-meta">
-                                    THE UNIVERSITY OF TEXAS AT DALLAS — Richardson, TX
-                                </span>
-                            </div>
-
-                        </div>
-
-                        <div class="edu-date">
-                            May 2023
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- =========================================================
-                 HONORS AND AFFILIATIONS
-            ========================================================== -->
-
-            <section class="honors" aria-labelledby="honors-heading">
-
-                <h2 id="honors-heading">
-                    Honors and Affiliations
-                </h2>
-
-                <ul class="honors-list">
-
-                    <li>
-                        National Society of Leadership and Success (NSLS)
-                    </li>
-
-                    <li>
-                        Golden Key International Honor Society
-                    </li>
-
-                    <li>
-                        Honors Society Foundation
-                    </li>
-
-                </ul>
-
-            </section>
-
-        </main>
-
-    </div>
-
-</body>
-</html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melissa Monteiro — Legal Operations | Paralegal | Research &amp; Program Support</title>
+  <meta
+    name="description"
+    content="Melissa Monteiro — M.A. Political Science graduate with experience in legal operations, case management, records administration, research, and stakeholder communication."
+  />
+
+  <style>
+    :root {
+      --navy: #12263f;
+      --slate: #33475b;
+      --muted: #64748b;
+      --accent: #1f6feb;
+      --accent-dark: #1656b8;
+      --line: #e2e8f0;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(18, 38, 63, 0.08);
+      --max: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--slate);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background: linear-gradient(135deg, #12263f 0%, #1d3a5f 55%, #24507f 100%);
+      color: #ffffff;
+      padding: 64px 0 56px;
+    }
+
+    .hero .eyebrow {
+      margin: 0 0 6px;
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #9fc0e8;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.1rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .hero .subtitle {
+      margin: 0 0 18px;
+      font-size: clamp(1.02rem, 2.2vw, 1.25rem);
+      font-weight: 600;
+      color: #d7e6fb;
+    }
+
+    .hero .tagline {
+      max-width: 760px;
+      margin: 0 0 28px;
+      font-size: 1rem;
+      color: #c3d4ea;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      color: #eaf2ff;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact a:hover {
+      color: #ffffff;
+    }
+
+    .contact svg {
+      width: 16px;
+      height: 16px;
+      flex: none;
+      fill: currentColor;
+      opacity: 0.9;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(31, 111, 235, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    /* ---------- Layout ---------- */
+    main {
+      padding: 44px 0 64px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 30px 32px;
+      margin-bottom: 26px;
+    }
+
+    section h2 {
+      margin: 0 0 20px;
+      font-size: 1.25rem;
+      color: var(--navy);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    /* ---------- Skills ---------- */
+    .skill-group {
+      padding: 14px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .skill-group:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .skill-group h3 {
+      margin: 0 0 8px;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+    }
+
+    .skill-group p {
+      margin: 0;
+      color: var(--slate);
+    }
+
+    /* ---------- Experience ---------- */
+    .job {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .job:first-of-type {
+      padding-top: 4px;
+    }
+
+    .job:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .job-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 6px 16px;
+      margin-bottom: 4px;
+    }
+
+    .job-title {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--navy);
+    }
+
+    .job-dates {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .job-company {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .job ul,
+    .honors ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .job li,
+    .honors li {
+      margin-bottom: 7px;
+    }
+
+    .job li:last-child,
+    .honors li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- Education ---------- */
+    .degree {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .degree:first-of-type {
+      padding-top: 0;
+    }
+
+    .degree:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .degree h3 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+      color: var(--navy);
+    }
+
+    .degree .school {
+      margin: 0;
+      font-weight: 600;
+      color: var(--accent-dark);
+    }
+
+    .degree .meta {
+      margin: 2px 0 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 0 0 48px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 24px 20px;
+      }
+
+      .hero {
+        padding: 48px 0 40px;
+      }
+    }
+
+    /* ---------- Print ---------- */
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .hero {
+        background: #ffffff;
+        color: #12263f;
+        padding: 0 0 16px;
+      }
+
+      .hero .eyebrow,
+      .hero .tagline,
+      .contact a {
+        color: #33475b;
+      }
+
+      .hero .subtitle {
+        color: #1f6feb;
+      }
+
+      .cta-row {
+        display: none;
+      }
+
+      section {
+        box-shadow: none;
+        borde
